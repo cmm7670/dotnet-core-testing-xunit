@@ -3,10 +3,11 @@ using Xunit;
 
 namespace GameEngine.Tests
 {
+    [Trait("Category", "Enemy")]
     public class EnemyFactoryShould
     {
         // Asserting against object type
-        [Fact]
+        [Fact(Skip = "Don't need to run this")]
         public void CreateNormalEnemyByDefault()
         {
             EnemyFactory sut = new EnemyFactory();
